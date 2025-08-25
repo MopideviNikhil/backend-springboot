@@ -33,6 +33,8 @@ This is a Spring Boot-based REST API backend for managing the rental of agricult
 
 ## 📂 Project Structure
 
+<details>
+<summary>Click to expand</summary>
 src/
 └── main/
     ├── java/
@@ -56,4 +58,53 @@ src/
         ├── application.properties               # App configuration (DB, mail, etc.)
         ├── static/                              # Static assets (if used)
         └── templates/                           # Template files (if using Thymeleaf)
+
+</details>
+
+---
+
+
+---
+
+## ⚙️ Configuration
+
+Update the following properties in `application.properties`:
+
+```properties
+# MySQL Configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/agri_rental_db
+spring.datasource.username=your_db_username
+spring.datasource.password=your_db_password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+# Mail Configuration (optional)
+spring.mail.host=smtp.example.com
+spring.mail.port=587
+spring.mail.username=your_email@example.com
+spring.mail.password=your_email_password
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+🚀 How to Run
+
+Clone the repository
+
+git clone https://github.com/your-username/agri-rental.git
+cd agri-rental
+
+
+Build the project
+
+mvn clean install
+
+
+Run the application
+
+mvn spring-boot:run
+
+
+Access the API
+
+http://localhost:8080/api/...
 
