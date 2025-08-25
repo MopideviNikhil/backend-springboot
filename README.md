@@ -35,24 +35,25 @@ This is a Spring Boot-based REST API backend for managing the rental of agricult
 
 src/
 └── main/
-├── java/
-│ └── com/
-│ └── rent/
-│ └── agri/
-│ ├── controller/ # REST API controllers
-│ ├── exception/ # Custom exceptions and global handler
-│ ├── model/
-│ │ ├── dto/ # DTOs for API requests and responses
-│ │ ├── entity/ # JPA entities mapped to DB
-│ │ └── enums/ # Enum types (e.g., status, roles)
-│ ├── repository/ # Spring Data JPA repositories
-│ ├── service/ # Service layer interfaces
-│ │ └── impl/ # Service implementations
-│ ├── util/ # Utility/helper classes
-│ ├── validation/ # Custom validation logic
-│ │ └── annotation/ # Custom validation annotations
-│ └── AgriApplication.java # Main Spring Boot app class
-└── resources/
-├── application.properties # App config (DB, mail, etc.)
-├── static
-├── templates
+    ├── java/
+    │   └── com/
+    │       └── rent/
+    │           └── agri/
+    │               ├── controller/              # REST API controllers
+    │               ├── exception/               # Custom exceptions and global handler
+    │               ├── model/
+    │               │   ├── dto/                 # DTOs for API requests and responses
+    │               │   ├── entity/              # JPA entities mapped to DB
+    │               │   └── enums/               # Enum types (e.g., status, roles)
+    │               ├── repository/              # Spring Data JPA repositories
+    │               ├── service/                 # Service interfaces
+    │               │   └── impl/                # Service implementations
+    │               ├── util/                    # Utility/helper classes
+    │               ├── validation/              # Custom validation logic
+    │               │   └── annotation/          # Custom validation annotations
+    │               └── AgriApplication.java     # Main Spring Boot application class
+    └── resources/
+        ├── application.properties               # App configuration (DB, mail, etc.)
+        ├── static/                              # Static assets (if used)
+        └── templates/                           # Template files (if using Thymeleaf)
+
