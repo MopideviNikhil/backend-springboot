@@ -55,9 +55,9 @@ src/
     │               │   └── annotation/          # Custom validation annotations
     │               └── AgriApplication.java     # Main Spring Boot application class
     └── resources/
-        ├── application.properties               # App configuration (DB, mail, etc.)
-        ├── static/                              # Static assets (if used)
-        └── templates/                           # Template files (if using Thymeleaf)
+        ├── application.properties               # App configuration (DB, mail)
+        ├── static/                             
+        └── templates/                           
 
 </details>
 
@@ -113,7 +113,6 @@ The project includes over 15 REST endpoints covering:
 - Email notifications
 
 View the full API list here:
-👉 [Full API Reference](docs/API.md)  
 <details>
 <summary>📘 Click to view full list of API endpoints</summary>
 
