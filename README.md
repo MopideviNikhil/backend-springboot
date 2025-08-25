@@ -89,16 +89,20 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 🚀 How to Run the Project
 
 Follow these steps to build and run the project:
+## 🚀 How to Run
 
-1. 📥 Clone the repository
-git clone https://github.com/MopideviNikhil/backend-springboot.git
-cd agri-rental
+1. **📥 Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/agri-rental.git
+   cd agri-rental
 
-2. 📦 Build the project
-mvn clean install
+2. **📦 Build the project**
+   ```bash
+   mvn clean install
 
-3. ▶️ Run the application
-mvn spring-boot:run
+3. **▶️ Run the application**
+   ```bash
+   mvn spring-boot:run
 
 ---
 
