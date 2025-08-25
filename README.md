@@ -94,8 +94,7 @@ Follow these steps to build and run the project:
 1. **📥 Clone the repository**
    - Repository URL: https://github.com/MopideviNikhil/backend-springboot.git
    ```bash
-   git clone https://github.com/your-username/agri-rental.git
-   cd agri-rental
+   cd agri
 
 2. **📦 Build the project**
    ```bash
