@@ -91,7 +91,7 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 Follow these steps to build and run the project:
 
 1. 📥 Clone the repository
-git clone https://github.com/your-username/agri-rental.git
+git clone https://github.com/MopideviNikhil/backend-springboot.git
 cd agri-rental
 
 2. 📦 Build the project
@@ -134,7 +134,6 @@ View the full API list here:
 | POST   | `/api/users/register`       | Register a new user             |
 | POST   | `/api/users/login`          | Login user                      |
 | GET    | `/api/equipment/search`     | Search equipment (filter)       |
-| ...    | `/...`                      | Additional endpoints as needed  |
 
 </details>
 
