@@ -63,12 +63,9 @@ src/
 
 ---
 
-
----
-
 ## ⚙️ Configuration
 
-Update the following properties in `application.properties`:
+Before running the project, configure your environment by editing `src/main/resources/application.properties`:
 
 ```properties
 # MySQL Configuration
@@ -85,26 +82,62 @@ spring.mail.username=your_email@example.com
 spring.mail.password=your_email_password
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
+```
 
-🚀 How to Run
+---
 
-Clone the repository
+🚀 How to Run the Project
 
+Follow these steps to build and run the project:
+
+1. 📥 Clone the repository
 git clone https://github.com/your-username/agri-rental.git
 cd agri-rental
 
-
-Build the project
-
+2. 📦 Build the project
 mvn clean install
 
-
-Run the application
-
+3. ▶️ Run the application
 mvn spring-boot:run
 
+---
 
-Access the API
+## 📑 API Overview
 
-http://localhost:8080/api/...
+The project includes over 15 REST endpoints covering:
+
+- Equipment management (CRUD)
+- Rentals
+- Users
+- Categories / types
+- Email notifications
+
+View the full API list here:
+👉 [Full API Reference](docs/API.md)  
+<details>
+<summary>📘 Click to view full list of API endpoints</summary>
+
+| Method | Endpoint                    | Description                     |
+|--------|-----------------------------|---------------------------------|
+| GET    | `/api/equipment`            | List all equipment              |
+| POST   | `/api/equipment`            | Add new equipment               |
+| GET    | `/api/equipment/{id}`       | Get equipment by ID             |
+| PUT    | `/api/equipment/{id}`       | Update equipment                |
+| DELETE | `/api/equipment/{id}`       | Delete equipment                |
+| GET    | `/api/rentals`              | List all rentals                |
+| POST   | `/api/rentals`              | Create a new rental             |
+| GET    | `/api/rentals/{id}`         | Get rental details              |
+| PUT    | `/api/rentals/{id}`         | Update rental                   |
+| DELETE | `/api/rentals/{id}`         | Cancel rental                   |
+| POST   | `/api/email/notify`         | Send notification email         |
+| GET    | `/api/categories`           | List equipment categories       |
+| POST   | `/api/categories`           | Create equipment category       |
+| POST   | `/api/users/register`       | Register a new user             |
+| POST   | `/api/users/login`          | Login user                      |
+| GET    | `/api/equipment/search`     | Search equipment (filter)       |
+| ...    | `/...`                      | Additional endpoints as needed  |
+
+</details>
+
+
 
